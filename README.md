@@ -30,10 +30,10 @@ Using historical blood glucose readings, insulin dosage, carbohydrate intake, an
 - Calculated the average RMSE across folds
 - Used the average boosting rounds from early stopping as n_estimators number for final training.
 
-# Retrain on full dataset 
+### Retrain on full dataset 
 - Once feature engineering was completed, and the average n_estimators was through early stopping & CV, the model was retrained from scratch on the entire training dataset.
 
-# Feature Importance 
+### Feature Importance 
 - Feature importance was calculated using implicit XGBoost score and SHAP values.
 - According to implicit scoring, bg-0:00 was the most important feature by far, followed by some of the engineered features, surprisingly.
 - The same result was observed from SHAP values.
